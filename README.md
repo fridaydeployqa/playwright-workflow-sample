@@ -14,6 +14,40 @@ This repository provides a minimal template for web testing automation using Pla
 - **Debug-friendly**: Built-in debugging tools and trace viewer
 - **Modern**: Support for modern web features and frameworks
 
+## Continuous Integration with GitHub Actions
+
+This repository includes an automated testing workflow using GitHub Actions. The workflow runs your Playwright tests automatically on every push and pull request to the main branch.
+
+### Workflow Features
+
+- **Automated Test Execution**: Tests run automatically on push/PR to main branch
+- **Cross-Platform Testing**: Tests run on Ubuntu latest
+- **Dependency Caching**: npm dependencies are cached for faster builds
+- **Artifact Storage**: Test reports are saved as artifacts for easy debugging
+- **Timeout Protection**: 60-minute timeout to prevent hung jobs
+
+### How It Works
+
+The workflow (`.github/workflows/playwright.yml`) follows these steps:
+1. Sets up Node.js environment
+2. Installs dependencies
+3. Installs Playwright browsers and system dependencies
+4. Runs all Playwright tests
+5. Uploads test results as artifacts
+
+### Viewing Test Results
+
+1. Go to the "Actions" tab in your GitHub repository
+2. Click on the latest workflow run
+3. Download the "playwright-report" artifact to view detailed test results
+
+### Documentation Links
+
+- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [GitHub Actions for JavaScript](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs)
+- [Playwright CI Guide](https://playwright.dev/docs/ci)
+- [GitHub Actions Workflow Syntax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
+
 ## Technical Architecture
 
 This template implements a minimal architecture:
