@@ -1,4 +1,4 @@
-# Playwright Test Template
+# Playwright Template
 
 ## Overview
 
@@ -43,17 +43,17 @@ You can set environment variables in several ways:
 
 1. Export in your shell:
    ```bash
-   export URL=https://your-site.com
+   export URL=https://fridaydeployqa.com/
    ```
 
 2. Set inline when running tests:
    ```bash
-   URL=https://your-site.com npm test
+   URL=https://fridaydeployqa.com/ npm test
    ```
 
 3. Create a `.env` file in the project root:
    ```
-   URL=https://your-site.com
+   URL=https://fridaydeployqa.com/
    ```
 
 ## Getting Started
