@@ -1,4 +1,4 @@
-# Playwright Template
+# Playwright Workflow Sample
 
 ## Overview
 
